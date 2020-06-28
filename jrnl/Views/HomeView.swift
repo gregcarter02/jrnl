@@ -15,24 +15,7 @@ struct HomeView: View {
 			VStack {
         Image("homeImage")
 			.resizable()
-				
-				NavigationView {
-					HStack {
-				Button(action: { print("button pressed:")}) {
-								Image(systemName: "pencil.circle")
-									.frame(width: 50, height: 50)
-							}
-					Button(action: { print("button pressed:")}) {
-							Image(systemName: "bookmark")
-								.frame(width: 50, height: 50)
-						}
-					Button(action: { print("button pressed:")}) {
-						Image(systemName: "bookmark")
-								.frame(width: 50, height: 50)
-						}
-					}
-				}
-			.navigationBarTitle("homeMenu")
+		PrimaryMenuView()
 		}
 	}
 }
